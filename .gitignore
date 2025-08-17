@@ -1,0 +1,3 @@
+venv
+.env
+#things that wont be visible on github repository
