@@ -5,7 +5,7 @@ distributing Python projects. It is used by setuptools
 of your project, such as its metadata, dependencies, and more
 '''
 
-from setuptools import find_packages,setup
+from setuptools import find_packages,setup #this will search for all the places and find packages (basically it will find folder with __init__.py file because this file states that the particular folder is a package)
 from typing import List
 
 def get_requirements()->List[str]:
@@ -32,8 +32,8 @@ def get_requirements()->List[str]:
 setup(
     name="NetworkSecurity",
     version="0.0.1",
-    author="Krish Naik",
-    author_email="krishnaik06@gmail.com",
+    author="Aryan Roy",
+    author_email="aryan09ashish@gmail.com",
     packages=find_packages(),
     install_requires=get_requirements()
 )
