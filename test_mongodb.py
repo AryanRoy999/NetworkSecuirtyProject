@@ -1,7 +1,10 @@
-
+#while working on this project this code was first pasted in push_data.py with username
+#  and password to check whether connection is getting established to the mongo db database or not. 
+# now since we have verified that connection is getting established i have pasted this code here
+#  so that you can also enter username or password and check whether this is working or not
 from pymongo.mongo_client import MongoClient
 
-uri = "mongodb+srv://krishaitechnologies:<@password>@cluster0.wnqb6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "mongodb+srv://AryanRoy:Aryan123@cluster0.hcq9pco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 # Create a new client and connect to the server
 client = MongoClient(uri)

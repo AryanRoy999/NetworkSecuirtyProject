@@ -17,6 +17,6 @@ if __name__=='__main__':
     try:
         logger.logging.info("Enter the try block")
         a=1/0
-        print("This will not be printed",a)
+        print("This will not be printed",a)#this line was written just to make sure that our function that we made to return error statement is working fine or not
     except Exception as e:
            raise NetworkSecurityException(e,sys)

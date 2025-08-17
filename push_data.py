@@ -28,7 +28,8 @@ class NetworkDataExtract():
         try:
             data=pd.read_csv(file_path)
             data.reset_index(drop=True,inplace=True)
-            records=list(json.loads(data.T.to_json()).values())
+            records=list(json.loads(data.T.to_json()).values())#loading the dataset then transforming it into json after taking its transpose.
+            #dataset is converted into a lists of json before adding to database
             return records
         except Exception as e:
             raise NetworkSecurityException(e,sys)
@@ -50,7 +51,7 @@ class NetworkDataExtract():
         
 if __name__=='__main__':
     FILE_PATH="Network_Data\phisingData.csv"
-    DATABASE="KRISHAI"
+    DATABASE="ARYAN"
     Collection="NetworkData"
     networkobj=NetworkDataExtract()
     records=networkobj.csv_to_json_convertor(file_path=FILE_PATH)
